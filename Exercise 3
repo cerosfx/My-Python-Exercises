@@ -1,0 +1,41 @@
+# program to enter name, age and tell user when user will be 100 years old.
+
+
+name1 = ''
+name2 = ''
+age = 0
+num1 = 1
+num2 = 0
+year = ''
+
+def input_data():
+    global name1
+    global name2
+    global age
+    name1 = input('What is your first name? ')
+    name2 = input('What is your last name? ')
+    age = int(input('What is your age? '))
+
+def greetings():
+    print('Nice to meet you ' + name1 + ' ' + name2)
+
+def future_age():
+    global year
+    year = str((2020 - age)+100)
+    print('You will be 100 years old in ' + year)
+
+def repeat_number():
+    global num1
+    global num2
+    global year
+    num2 = int(input('Please enter a number '))
+    while num1 < num2:
+        print('You will be 100 yeas old in ' + year)
+        num1 += 1
+
+
+input_data()
+greetings()
+future_age()
+repeat_number()
+                 
