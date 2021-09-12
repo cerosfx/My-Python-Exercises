@@ -1,0 +1,90 @@
+#PROGRAM TO DO BASIC ARITMETHIC
+
+#ADDITION MODULE
+
+condition = False
+
+print('Hello friend ' )
+print()
+
+char_name = input('Enter your name please ')
+print()
+print('Nice to meet you', char_name)
+print()
+print('----------------------------------')
+print('Lets do some math together =P ')
+print()
+
+num1 = int(input('Enter first number  =  '))
+num2 = int(input('Enter second number =  '))
+print(' Sum of ', num1 + num2)
+print()
+print('----------------------------------')
+
+#SUBTRACT MODULE
+
+print('Lets subtract the same numbers =) ')
+print('Subtract of ', num1 - num2)
+print()
+print('----------------------------------')
+
+#MULTIPLY MODULE
+
+print('Lets multiply the numbers now ', num1 * num2)
+print()
+print('----------------------------------')
+
+#DIVIDE MODULE
+
+print('lets divide the numbers now ', num1 // num2 )
+print()
+print('----------------------------------')
+
+#MOD MODULE
+
+mod_num1 = num1 % num2
+print('the reminder is ', mod_num1)
+print()
+print('----------------------------------')
+
+#BOOLEAN OPERATION
+
+print(condition)
+condition =not condition
+print('has changed to ',condition)
+print()
+print('----------------------------------')
+
+#SQUARE OPERATION
+
+square_num = num1**2
+print('The square root of ', num1) 
+print(' is ', square_num)
+print()
+print('----------------------------------')
+
+print('100 added to ', num1)
+print('is ')
+num1 += 100
+print(num1)
+print()
+print('----------------------------------')
+#CONDITIONAL
+
+cond = num1 <= num2
+print(cond)
+cond = num1 >= num2
+print(cond)
+cond = num1 == num2
+print(cond)
+print()
+print('----------------------------------')
+avatar_name = input('What is your Avatar name? ')
+full_name = char_name + avatar_name
+print(' Your full name is ', full_name)
+print()
+print('----------------------------------')
+
+
+print('Very nice', char_name)
+    
