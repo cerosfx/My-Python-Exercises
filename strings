@@ -1,0 +1,44 @@
+# Learning from Python Crash Course book
+# program for typing  a name in lower and capital case
+
+name = "ada lovelace"
+
+print(name.title())
+print(name.upper())
+print(name.lower())
+
+print("-----------------")
+
+f_name = "cesar rodriguez "
+print(f_name.title())
+print(f_name.upper())
+print(f_name.lower())
+
+print("-----------------")
+
+first_name = "ada"
+last_name = "lovelace"
+full_name = f"{first_name} {last_name}"
+print(full_name)
+
+print(f"Hello, {first_name} {last_name}")
+print(f"Hello, {full_name.title()}")
+
+print("-----------------")
+
+first_name = "cesar"
+last_name = "rodriguez"
+full_name = f"{first_name} {last_name}"
+print(full_name.title())
+print(full_name.upper())
+print(full_name.lower())
+
+message = (f"Hello, {full_name.title()}, How are you? ")
+print(message)
+
+print("-----------------")
+
+print(f"\t{first_name.title()}")
+print("\tHola como estas?")
+
+print("\tLanguages: \nPython\nC++\nJavaScript\nTurbo Pascal\nC#")
