@@ -42,3 +42,14 @@ print(f"\t{first_name.title()}")
 print("\tHola como estas?")
 
 print("\tLanguages: \nPython\nC++\nJavaScript\nTurbo Pascal\nC#")
+
+print("-----------------")
+
+print("Languages:\n\tPython\n\tJava\n\tC++\n\tturbo Pascal\n\tC#")
+
+print("-----------------")
+
+phone = "IPhone "
+phone = phone.rstrip()
+print(phone)
+
