@@ -1,4 +1,4 @@
-# Class fields for a spaceship
+# Class fields for a spaceship.
 
 class GameShip:   # -------------- Superclass
 
