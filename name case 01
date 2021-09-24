@@ -1,0 +1,5 @@
+# name case 01
+
+name = "cesar"
+
+print(f" Hello, {name.title()}, \n\tWould you like to learn some Python today?")
