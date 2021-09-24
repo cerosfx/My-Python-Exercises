@@ -1,0 +1,7 @@
+# name case 02
+
+name = "cesar"
+
+print(f"{name.upper()}")
+print(f"{name.lower()}")
+print(f"{name.title()}")
