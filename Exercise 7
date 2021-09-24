@@ -1,0 +1,63 @@
+# Class fields for a spaceship
+
+class GameShip:   # -------------- Superclass
+
+    def __init__(self, name, width, height, x_pos, y_pos): #initializer/Constructor
+        self.name = name
+        self.width = width
+        self.height = height
+        self.x_pos = x_pos
+        self.y_pos = y_pos
+
+    def move(self, by_x_amount, by_y_amount):
+        self.x_pos += by_x_amount
+        self.y_pos += by_y_amount
+
+
+spaceship_0 = GameShip('x_wing', 75, 75, 100, 100)
+print(spaceship_0.name)
+spaceship_0.name = 'y_wing'       
+print(spaceship_0.name)
+spaceship_0.name = 'a_wing'
+print(spaceship_0.name)
+spaceship_0.move(34, 32)
+print(spaceship_0.x_pos)
+print(spaceship_0.y_pos)
+print('\n')
+
+#------------------------- Define subclass
+
+class EvilShip(GameShip):
+
+    def __init__(self, name, x_pos, y_pos):
+        super().__init__(name, 100, 100, x_pos, y_pos)
+
+    def move(self, by_x_amount, by_y_amount):
+        super().move(by_x_amount, by_y_amount)
+
+enemy = EvilShip('Gundam', 200, 200)
+print(enemy.name)
+enemy.name = 'Zaku'
+print(enemy.name)
+enemy.move(23, 43)
+print(enemy.x_pos)
+print(enemy.y_pos)
+print('\n')
+
+# ------------------- Define subclass 1
+
+class EvilShip_1(GameShip):
+
+    def __init__(self, name, x_pos, y_pos):
+        super().__init__(name, 200, 200, x_pos, y_pos)
+
+    def move(self, by_x_amount, by_y_amount):
+        super().move(by_x_amount, by_y_amount)
+
+enemy_1 = EvilShip_1('Tie_fighter', 300, 300)
+print(enemy_1.name)
+enemy_1.move(11, 32)
+print(enemy_1.x_pos)
+print(enemy_1.y_pos)
+
+        
