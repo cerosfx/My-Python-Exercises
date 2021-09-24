@@ -1,0 +1,17 @@
+
+name = input(' Please type your name. \n')
+age = int(input(' Please type your age. \n'))
+
+result = ((2021 - age) + 100) 
+
+print('hi,', name) 
+print('You will be 100 years old in ', result)
+
+num2 = int(input('Please input another number. \n'))
+num1 = 0
+
+while num1 < num2:
+    print('You will be 100 years old in ', result)
+    num1 += 1
+    
+print('Thanks for playing =)')
