@@ -1,0 +1,20 @@
+# stripping names
+
+print("...")
+name = "     \n\tAlbert Einstein      "
+
+print(name)
+
+print(name.lstrip())
+
+print(name.rstrip())
+
+print(name.strip())
+
+print("Whitespace still exists on variable")
+print(name)
+
+# if I want to remove all whitespace all together then 
+
+name = name.strip()
+print(name)
