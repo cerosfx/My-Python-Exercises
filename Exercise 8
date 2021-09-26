@@ -1,0 +1,14 @@
+#name list
+
+
+names = ["mei","kelsey","caleb","don","ryan","joaquin"]
+
+message = ("How are you my friend? I hope life is good")
+
+print(f"{names[0].title()} {message}")
+print(f"{names[1].title()} {message}")
+print(f"{names[2].lower()} {message}")
+print(f"{names[3].upper()} {message}")
+print(f"{names[4].upper()} {message}")
+print(f"{names[5].title()} {message}")
+
