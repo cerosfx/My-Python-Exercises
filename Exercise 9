@@ -1,0 +1,14 @@
+# vehicle list
+
+vehicles = ["audi s3","nissan gtr ","mercedes gtr","bmw m2","honda civic"]
+
+message01 = (f"I love the {vehicles[0].title()}")
+message02 = (f"I would love to have a {vehicles[1].title()}")
+message03 = (f"I think {vehicles[2].title()} is a beast")
+message04 = (f"I don't like {vehicles[3].title()} at all")
+message05 = (f"My first car was a {vehicles[4].title()}")
+print(message01)
+print(message02)
+print(message03)
+print(message04)
+print(message05)
