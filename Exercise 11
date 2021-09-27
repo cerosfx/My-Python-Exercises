@@ -1,0 +1,41 @@
+# console list
+
+consoles = []
+
+consoles.append("playstation 1")
+consoles.append("playstation 2")
+consoles.append("playstation 3")
+consoles.append("playstation 4")
+consoles.append("playstation 5")
+
+print(consoles)
+
+consoles.insert(0, "nintendo switch")
+consoles.insert(3, "nintendo gamecube")
+print(consoles)
+print("\n")
+
+print(f"\n\tMy console that is not working at the moment is {consoles[4].title()}")
+print(f"\n\tMy favorite console at the moment is {consoles[5].title()}")
+
+broken_console = consoles.pop(4)
+print(f"\n\tSo the console that is out of commision is {broken_console.title()}")
+print(consoles)
+new_console = consoles.pop(5)
+print(f"\n\tMy newest console that I don't use as much is {new_console.title()}")
+print(consoles)
+travel_console = consoles.pop(0)
+print(f"\n\tMy traveling console is {travel_console.title()}")
+print(consoles)
+first_console = consoles.pop(0)
+print(f"\n\tMy first console is {first_console.title()}")
+print(consoles)
+
+del consoles[1]
+print(consoles)
+twice_console = consoles.pop(0)
+print(f"\n\tThe console I bought twice is {twice_console.title()}")
+print(consoles)
+
+del consoles[0]
+print(consoles)
