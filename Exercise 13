@@ -1,0 +1,24 @@
+# guest list of people to invite to a party.
+
+
+guest_list = []
+
+guest_list.append("Albert Einstein")
+guest_list.append("John Kennedy")
+guest_list.append("Carl Sagan")
+
+print(guest_list)
+guest_list.insert(0,"Akira Toriyama")
+
+print(guest_list)
+guest_list.insert(3,"Osamu Tezuka")
+print(guest_list)
+message = (", dear friend, I would like to invite you to a dinner this coming Saturday Oct 9th 2021.")
+
+
+print("\n")
+print(f"{guest_list[0].title()} {message}")
+print(f"{guest_list[1].title()} {message}")
+print(f"{guest_list[2].title()} {message}")
+print(f"{guest_list[3].title()} {message}")
+print(f"{guest_list[4].title()} {message}")
