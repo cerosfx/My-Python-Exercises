@@ -1,0 +1,45 @@
+# parts I bought for my streaming PC
+
+computer_parts = []
+
+computer_parts.append("case")
+computer_parts.append("AMD Ryzen 3")
+computer_parts.append("16 gig sticks")
+computer_parts.append("Asus GeForce 1660 super")
+computer_parts.append("CX550")
+computer_parts.append("500 M.2 Nvme")
+computer_parts.append("elgato card")
+
+computer_parts.insert(0,"AsRock Motherboard")
+computer_parts.insert(3,"Pentium Processor")
+
+print(computer_parts)
+
+del computer_parts[3]
+print(computer_parts)
+print("\n")
+
+
+processor = computer_parts.pop(2)
+print(f"I choose {processor.title()} as the brain of my computer")
+memory = computer_parts.pop(2)
+print(f"I decide to have {memory.title()} for memory")
+drive = computer_parts.pop(4)
+
+print(f"I wanted to have 500 gigs of space so I bought {drive.title()}")
+
+del computer_parts[1]
+print(computer_parts)
+
+mother = computer_parts.pop(0)
+print(f"My motherboard is {mother.title()}")
+print(computer_parts)
+
+videocard = computer_parts.pop(0)
+print(f"My best videocard is {videocard.title()}")
+
+capturecard = computer_parts.pop(1)
+print(f"i use {capturecard.title()} as my tool to stream")
+
+print(computer_parts)
+
