@@ -1,0 +1,102 @@
+# guest list of people to invite to a party.
+
+
+guest_list = []
+
+guest_list.append("Albert Einstein")
+guest_list.append("John F. Kennedy")
+guest_list.append("Carl Sagan")
+print(guest_list)
+
+guest_list.insert(0,"Akira Toriyama")
+print(guest_list)
+
+guest_list.insert(3,"Osamu Tezuka")
+print(guest_list)
+
+message = (", dear friend, I would like to invite you to a dinner this coming Saturday Oct 9th 2021.")
+print("\n")
+print(f"{guest_list[0].title()} {message}")
+print(f"{guest_list[1].title()} {message}")
+print(f"{guest_list[2].title()} {message}")
+print(f"{guest_list[3].title()} {message}")
+print(f"{guest_list[4].title()} {message}")
+
+cancel_guest = guest_list.pop(3)
+guest_list.insert(3, "Hayao Miyazaki")
+
+print("\n")
+print(f"Hello friends, I must inform you that {cancel_guest} can't make it to the party, instead {guest_list[3].title()} will attend in his place")
+
+message_2 = (", dear friend, this is a remainder the party is this coming Saturday Oct 9th 2021. ")
+
+print("\n")
+print(guest_list)
+print(f"{guest_list[0].title()} {message_2}")
+print(f"{guest_list[1].title()} {message_2}")
+print(f"{guest_list[2].title()} {message_2}")
+print(f"{guest_list[3].title()} {message_2}")
+print(f"{guest_list[4].title()} {message_2}")
+
+print("------------------------------------------\n")
+
+message_3 =(" dear friend, it has been brought to my attention that we have a bigger table for us. 3 more people can be added")
+
+print(f"{guest_list[0].title()} {message_3}")
+print(f"{guest_list[1].title()} {message_3}")
+print(f"{guest_list[2].title()} {message_3}")
+print(f"{guest_list[3].title()} {message_3}")
+print(f"{guest_list[4].title()} {message_3}")
+
+guest_list.insert(0, "Gus Rodriguez")  #inserting at the begining of list
+guest_list.insert(4, "Hideo Kojima")  # inserting in the middle of the list
+guest_list.append("Steve Jobs") # inserting at the end of list
+
+print(guest_list)
+
+print("------------------------------------------\n")
+
+
+print(f"{guest_list[0].title()} {message_2}")
+print(f"{guest_list[1].title()} {message_2}")
+print(f"{guest_list[2].title()} {message_2}")
+print(f"{guest_list[3].title()} {message_2}")
+print(f"{guest_list[4].title()} {message_2}")
+print(f"{guest_list[5].title()} {message_2}")
+print(f"{guest_list[6].title()} {message_2}")
+print(f"{guest_list[7].title()} {message_2}")
+
+print("------------------------------------------\n")
+
+
+message_4 = ("Sorry guys. We lost the table we had. Only two people can attend")
+print(message_4) 
+
+message_5 = (",I must apologize, we lost the table we had. We'll meet at another time")
+
+
+print(guest_list)
+
+guest_out = guest_list.pop(1)
+print(f"{guest_out} {message_5}")
+guest_out = guest_list.pop(2)
+print(f"{guest_out} {message_5}")
+guest_out = guest_list.pop(3)
+print(f"{guest_out} {message_5}")
+guest_out = guest_list.pop(4)
+print(f"{guest_out} {message_5}")
+guest_out = guest_list.pop(0)
+print(f"{guest_out} {message_5}")
+guest_out = guest_list.pop(1)
+print(f"{guest_out} {message_5}")
+
+print(guest_list)
+
+message_6 = (", dear friend. you are the lucky one. We'll meet this Saturday Oct 9th")
+print(f"{guest_list[0]} {message_6}")
+del guest_list[0]
+print(f"{guest_list[0]} {message_6}")
+del guest_list[0]
+
+print(guest_list)
+
