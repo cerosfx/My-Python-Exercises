@@ -1,0 +1,34 @@
+# places to visit
+
+
+places = ['tokyo','chiba','nagoya','akita','osaka']
+print(places)
+print('\n')
+
+print('sorting alphabetically temporarly')
+print(sorted(places))
+print('\n')
+
+print('reverse order with Sorted')
+print(sorted(places, reverse =True))
+print('\n')
+
+print('original order')
+print(places)
+print('\n')
+
+print('reversing original order')
+places.reverse()
+print(places)
+
+print('Back to original order')
+places.reverse()
+print(places)
+
+print('Using sort()')
+places.sort()
+print(places)
+
+print('Using sort() reverse = True')
+places.sort(reverse=True)
+print(places)
