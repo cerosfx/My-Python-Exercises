@@ -1,0 +1,74 @@
+# List of 2D games I want to study.
+
+games = []
+
+games.append('gaiares')
+games.append('air buster')
+games.append('m.u.s.h.a.')
+games.append('super metroid')
+games.append('in the hunt')
+
+print(games)
+
+print(f"\tSort alphabetically temporary")
+print(sorted(games))
+
+print(f"\tPrint original list")
+print(games)
+
+print(f"\tPrinting list in reverse")
+games.reverse()
+print(games)
+games.reverse()
+
+print(f"\tPrint original list")
+print(games)
+
+# INSERTING, ADDING TO A LIST
+
+print("\tAdding 4 more games")
+games.insert(4, 'area 88')         # insert by index and name
+games.append('sonic the hedgehog') # insert at the end of list
+games[1] = 'actraiser'             # insert by index only
+print(games)
+
+games.sort()
+print(games)
+games.sort(reverse=True)
+print(games)
+games.sort()
+print(games)
+
+del games[0]     # deleting value at index 0
+print(games)
+
+
+fav_nes = games.pop(-1)
+print(f"\tMy favorite SNES game is {fav_nes.title()}")
+
+fav_sega = games.pop(-1)
+print(f"\tMy favorite Genesis game is {fav_sega.title()}")
+
+fav_intro = games.pop(-1)
+print(f"\tThe best Genesis intro is {fav_intro.title()}")
+
+fav_look = games.pop(-1)
+print(f"\tThe best looking 2D shooter is {fav_intro.title()} ")
+
+fav_hard = games.pop(-1)
+print(f"\tThe hardest shooter I've played is {fav_hard.title()}")
+
+fav_make = games.pop(-1)
+print(f"\tThe shooter I'd love to make is {fav_make.title()}")
+
+print(games)
+
+games.append('contra')
+games.append('donkey kong country')
+games.insert(2, 'killer instinct')
+print(games)
+
+games.remove('contra')
+games.remove('killer instinct')
+games.remove('donkey kong country')
+print(games)
