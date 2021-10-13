@@ -1,0 +1,77 @@
+# Practice list in Python
+# Favorite PS1 games
+
+games = []
+
+games.append('metal gear solid')
+games.append('resident evil 2')
+games.append('ace combat 3')
+games.append('ridge racer type 4')
+games.append('silent hill')
+
+print('\tOriginal list')
+print(games)
+
+print('\tInserting 2 more games')
+games.insert(0, 'vagrant story')
+games.insert(3, 'tobal number 1')
+
+print('\tTwo games added to list')
+print(games)
+
+print('\tList in alphabetical order temporarely')
+print(sorted(games))
+
+print('\tOriginal list')
+print(games)
+
+print('\tList in reverse')
+games.reverse()
+print(games)
+
+print('\tOriginal list')
+games.reverse()
+print(games)
+
+print('\tList in alphabetical order permanently')
+games.sort()
+print(games)
+
+games.sort(reverse=True)
+print(games)
+games.sort()
+print(games)
+
+print('\tRemoving 2 games')
+del games[3]
+del games[0]
+print(games)
+
+story = games.pop(-1)
+print(f"\tThe best game story is {story.title()}.")
+action = games.pop(0)
+print(f"\tThe best action game is {action.title()}")
+scary = games.pop(1)
+print(f"\tThe most scary game is {scary.title()}")
+scary2 = games.pop(0)
+print(f"\tThe second best scary game is {scary2.title()}")
+fun = games.pop()
+print(f"\tThe most fun game is {fun.title()}")
+print(games)
+
+print("\tAdding one games to list")
+games.append('FF6')
+games.append('metal gear solid')
+games.append('silent hill')
+print(games)
+games[1] = ('ducati')
+games[0] = ('suzuki')
+games[2] = ('RE3')
+print(games)
+
+games.remove('ducati')
+print(games)
+games.remove('suzuki')
+print(games)
+games.remove('RE3')
+print(games)
