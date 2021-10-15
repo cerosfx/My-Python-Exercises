@@ -1,0 +1,7 @@
+# kinds of pizza
+
+pizzas = ['peperoni','hawaiian','margarita']
+
+for pizza in pizzas:
+	print(f"\tI love {pizza.title()} pizza!\n ")
+print("Pizza while playing a video game is the best!")
