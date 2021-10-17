@@ -1,0 +1,31 @@
+# exercises chapter 4
+# counting to 20
+
+#for value in range(1,21):
+#	print(value)
+
+#numbers = list(range(1, 1000001))
+#print(numbers)
+
+
+numbers = list(range(1, 1000001))
+#for value in numbers:
+#	print(value)
+
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+
+odd_num = list(range(1, 20, 2))
+for value in odd_num:
+	print(value)
+print('\n')
+
+multiple_three = list(range(0,31, +3))
+for value in multiple_three:
+	print(value)
+print('\n')
+
+cube = [ value**3 for value in range(1, 11)]
+for number in cube:
+	print(number)
