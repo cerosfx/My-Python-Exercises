@@ -1,0 +1,41 @@
+# practice for loops and range()
+
+# Use a for loop to print number from 1 to 20
+
+for value in range(1, 21):
+	print(value)
+
+# Make a list of number 1 to 1 million and use a for loop to print numbers.
+
+numbers = list(range(1, 1000001))
+for value in numbers:
+	print(value)
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+
+# Use range to make a list of odd numbers from 1 to 20. Use a for loop to print it.
+
+odd_numbers = list(range(1, 21, 2))
+for value in odd_numbers:
+	print(value)
+print("\n")
+
+# Make a list of multiples of 3 from 3 to 30. Use a for loop to print the numbers on the list.
+
+multiples = list(range(3, 31, 3))
+for value in multiples:
+	print(value)
+print("\n")
+
+# Make a list of the first 10 cubes from 1 to 10 and use a for loop to print list.
+
+cubes = list(range(1, 11))
+for value in cubes:
+	num_cube = (value**3)
+	print(num_cube)
+
+# make the same list in comprehensive
+
+cubes = [ value**3 for value in range(1, 11)]
+print(cubes)
