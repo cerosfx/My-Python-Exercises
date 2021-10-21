@@ -1,0 +1,71 @@
+# creating list
+
+games = ['metroid','super metroid','metroid prime','metroid zero','metroid fusion','metroid dread']
+
+games.append('metroid hunters')
+games.insert( 3,'metroid pinball')
+games.insert( 0, 'Metroid other M')
+games.append('Metroid Deferation Force')
+
+for game in games[:]:
+	print(game.title())
+print('\n')
+print('\tRemoving 2 games using DEL and 2 more using REMOVE ')
+games.remove('Metroid Deferation Force')
+del games[0]
+del games[3]
+games.remove('metroid hunters')
+
+print(games)
+
+# Slicing list.
+
+print(f'\tMy favorite games are: ')
+for game in games[1:3]:
+	print(game.title())
+
+print(f'\tI am currently playing: ')
+for game in games[-1:]:
+	print(game.upper())
+
+print("\tI haven't played yet: ")
+for game in games[3:5]:
+	print(game.lower())
+
+# sorting and reverse list
+
+print(f'The lenght of this list is {len(games)}')
+
+print(games)
+print(sorted(games))
+print(games)
+
+games.sort()
+print(games)
+
+print(games[2].title())
+print(games[0].title())
+print(games[1].title())
+print(games[3].upper())
+print(games[5].title())
+print(games[4].upper())
+
+print(games)
+print('\n')
+
+one = games.pop(0)
+print(f'The story started with {one.title()}')
+second = games.pop(-1)
+print(f'The one I played for the first time was {second.title()}')
+third = games.pop(2)
+print(f'The one I never finished was {third.title()}')
+
+fourth = games.pop(1)
+fifth = games.pop(1)
+print(f'The 2 I never played are:')
+print(fourth.title())
+print(fifth.title())
+
+last = games.pop(0)
+print(f'The one I am currently playing is {last.title()}')
+print(games)
