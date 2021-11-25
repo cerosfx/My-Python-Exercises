@@ -1,0 +1,9 @@
+# Hello admin
+
+users = ['diana','monica','victoria','rodrigo','admin']
+
+for user in users:
+	if user == 'admin':
+		print(f"Wow {user.title()}, Long time no see!!")
+	else:
+		print(f"Hello {user.title()}, nice to see you.")
