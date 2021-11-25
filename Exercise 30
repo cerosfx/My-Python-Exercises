@@ -1,0 +1,14 @@
+# metroid games 
+
+games = ['metroid','super metroid','metroid prime','metroid dread']
+
+if games:
+	for requested_game in games:
+		if requested_game == 'metroid dread':
+			print("Sorry we don't have Metroid Dread at the moment")
+		else:
+			print(f"We have {requested_game.title()}")
+
+	print(f"\nYour games are ready for pick up")
+else:
+	print("You haven't requested any games")
