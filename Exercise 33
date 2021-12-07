@@ -1,0 +1,19 @@
+glossary = {
+	'get' : 'return a value of a key that does not exist ',
+	'if' : 'conditional',
+	'if-elif-else' : 'conditional for 3 outputs',
+	'del' : 'deletes a key and value',
+	'dictionary' : 'similar to a list but with more control',
+	}
+
+print('get:\n\t return a value of a key that does not exist ')
+print('if:\n\t  conditional')
+print('if-elif-else:\n\t conditional for 3 outputs')
+print('del:\n\t  deletes a key and value')
+print('dictionary:\n\t similar to a list but with more control')
+
+print('\n')
+
+for key, value in glossary.items():
+	print(f"command: {key.title()}")
+	print(f"meaning: {value.title()}")
