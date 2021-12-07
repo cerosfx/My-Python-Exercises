@@ -1,0 +1,21 @@
+#loop user info
+
+user_0 = {
+	'username' : 'efermi',
+	'first_name' : 'enrico',
+	'last_name' : 'fermi', 
+}
+
+user_1 = {
+	'username' : 'cerox3',
+	'first_name' : 'Cesar',
+	'last_name' : 'Rod',
+}
+
+for key, value in user_0.items():
+	print(f"\nKey: {key}")
+	print(f"Value: {value}")1
+
+for key, value in user_1.items():
+	print(f"\nKey: {key}")
+	print(f"Value: {value}")	
