@@ -1,0 +1,27 @@
+#rivers
+
+rivers = {
+	'nile' : 'egypt',
+	'amazon': 'brasil',
+	'yukon': 'canada',
+	'fraser': 'canada',
+}
+
+for river, country in rivers.items():
+	print(f"The {river.title()} river is located in {country.title()}.")
+
+print(f'\nThe rivers in the list are: ')
+for river in rivers.keys():
+	print(f"{river.title()}")
+
+print("\nThe countries with rivers are:")
+for country in rivers.values():
+	print(country.title())
+
+print(f'\nThe rivers in sorted mode in the list are: ')
+for river in sorted(rivers.keys()):
+	print(f"{river.title()}")
+
+print("\nThe countries in set mode in with rivers are:")
+for country in set(rivers.values()):
+	print(country.title())
