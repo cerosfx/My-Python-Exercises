@@ -1,0 +1,15 @@
+favourite_languages = {
+	'jen' : 'python',
+	'sarah' : 'c',
+	'edward' : 'ruby',
+	'phil' : 'python',
+	'cesar':' ',
+	'john':' ',
+	'monica':' ',
+	}
+
+for name, language in favourite_languages.items():
+	if language == ' ':
+		print(f"{name}, don't forget to answer the poll")
+	else:
+		print(f"{name}, thank you for participating")
