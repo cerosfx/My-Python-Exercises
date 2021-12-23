@@ -1,0 +1,30 @@
+#starwars users
+
+users = {
+	'dvader' : {
+		'first': 'darth',
+		'last': 'vader',
+		'location': 'mustafar'
+	},
+
+	'bkenobi': {
+		'first': 'ben',
+		'last': 'kenobi',
+		'location': 'tatooine'
+	},
+
+	'hsolo': {
+		'first':'han',
+		'last':'solo',
+		'location': 'corellia'
+	}
+}
+
+
+for username, user_info in users.items():
+	print(f"\nusername")
+	full_name = f"{user_info['first']} {user_info['last']}"
+	location = f"{user_info['location']}"
+
+	print(f"Full name: {full_name.title()}")
+	print(f"Location: {location.title()}")
